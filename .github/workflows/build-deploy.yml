@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  OIDC_ARN: arn:aws:iam::472153192489:role/GitHubActionsOIDC
+  OIDC_ARN: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/GitHubActionsOIDC
   ECR_REGISTRY: 472153192489.dkr.ecr.ap-northeast-1.amazonaws.com
   ECR_REPOSITORY: go-simple-server
   APP: go-simple-server
